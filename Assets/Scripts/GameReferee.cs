@@ -89,7 +89,7 @@ public class GameReferee : MonoBehaviour
         switch (_defGameState)
         {
             case ActualGameState.GAME:
-                _goShotUI.SetActive(true);
+
                 break;
             case ActualGameState.PAUSE:
             case ActualGameState.VICTORY:
@@ -122,7 +122,6 @@ public class GameReferee : MonoBehaviour
         {
             case ActualGameState.GAME:
                 Time.timeScale = 1.0f;
-                _goShotUI.SetActive(true);
                 _fltGameCronometer -= Time.deltaTime;
 
                 _fltGameCronometer = Mathf.Clamp(_fltGameCronometer, 0.0f, Mathf.Infinity);
