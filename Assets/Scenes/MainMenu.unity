@@ -952,7 +952,7 @@ GameObject:
   - component: {fileID: 1936115627}
   - component: {fileID: 1936115628}
   m_Layer: 0
-  m_Name: GameReferee
+  m_Name: SceneManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -985,7 +985,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4782f06c6178c9145a2159a3130f6227, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _goTutorial: {fileID: 0}
+  _goShotUI: {fileID: 0}
 --- !u!1 &1984426120
 GameObject:
   m_ObjectHideFlags: 0

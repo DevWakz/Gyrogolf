@@ -9,12 +9,13 @@ public class ShotManager : MonoBehaviour
     public SliderController slider;
     public BallMechanics ballRB;
     public GameObject _goShotUI;
+    public GameObject _goHUD;
     
 
     public void ShotClicked()
     {      
             ballRB.rb.AddForce(Vector3.right * slider.addedForce, ForceMode.Impulse);
-            Invoke("ShotOver", 1f);
+            Invoke("ShotOver", .1f);
     }
 
   
@@ -22,6 +23,7 @@ public class ShotManager : MonoBehaviour
     {
         print("entro");
         _goShotUI.SetActive(false);
+        _goHUD.SetActive(true);
         slider.addedForce = 0;
 
     }

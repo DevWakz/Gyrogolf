@@ -7,12 +7,16 @@ using TMPro;
 public class MenuManager : MonoBehaviour
 {
     public GameObject _goShotUI;
+    [SerializeField]
+    
+
     void Start()
     {
 
     }
     void Update()
     {
+   
 
     }
 
@@ -28,17 +32,22 @@ public class MenuManager : MonoBehaviour
         Application.Quit();
     }
 
-    public void Restart()
+    public void Restart(string sceneName)
     {
-        SceneManager.LoadScene(1);
-        Time.timeScale = 1.0f;
+        SceneManager.LoadScene(sceneName);
     }
 
     public void GoBackToMenu()
     {
         SceneManager.LoadScene(0);
+
     }
 
+    public void NxtLevel(string sceneName)
+    { 
+        SceneManager.LoadScene(sceneName);
+
+    }
 
     
 }
