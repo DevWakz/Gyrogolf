@@ -6,17 +6,18 @@ using TMPro;
 
 public class MenuManager : MonoBehaviour
 {
-    public GameObject _goShotUI;
-    [SerializeField]
-    
+    Scene myScene;
+    public int sceneIndex;
 
     void Start()
     {
-
+        int index = myScene.buildIndex;
+        sceneIndex = index;
+        print(index);
     }
     void Update()
     {
-   
+        
 
     }
 
@@ -32,7 +33,7 @@ public class MenuManager : MonoBehaviour
         Application.Quit();
     }
 
-    public void Restart(string sceneName)
+    public void Restart(int sceneName)
     {
         SceneManager.LoadScene(sceneName);
     }
@@ -43,7 +44,7 @@ public class MenuManager : MonoBehaviour
 
     }
 
-    public void NxtLevel(string sceneName)
+    public void NxtLevel(int sceneName)
     { 
         SceneManager.LoadScene(sceneName);
 

@@ -60,6 +60,9 @@ public class BallMechanics : MonoBehaviour
         {
             boostCounter--;
             rb.AddForce(Vector3.right * 1000, ForceMode.Impulse);
+            if (boostCounter == 0)
+                boostButton.SetActive(false);
+        
         }
     }
     

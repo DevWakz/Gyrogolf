@@ -26,25 +26,33 @@ public class GameReferee : MonoBehaviour
     public GameObject _goShotUI;
     public GameObject _goVictoryScreen;
     public GameObject _goDefeatScreen;
+    Gyroscope myGyro;
+
+    void Start()
+    {
+        myGyro = Input.gyro;
+    }
 
     public void PauseGame()
     {
+       
         switch (_defGameState)
         {
             case ActualGameState.GAME:
                 _defGameState = ActualGameState.PAUSE;
-
                 Time.timeScale = 0.0f;
-
+                myGyro.enabled = false;
                 _goHUD.SetActive(false);
                 _goPauseScreen.SetActive(true);
                
                 break;
             case ActualGameState.PAUSE:
                 _defGameState = ActualGameState.GAME;
+                Time.timeScale = 1.0f;
+                myGyro.enabled = true;
                 _goHUD.SetActive(true);
                 _goPauseScreen.SetActive(false);
-                Time.timeScale = 1.0f;
+                
 
                 break;
 
@@ -72,10 +80,7 @@ public class GameReferee : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        
-    }
+ 
 
 
     private void Update()

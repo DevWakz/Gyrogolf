@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 490c794b0746c4e4db318dc9e52ec637
   - enabled: 1
-    path: Assets/Scenes/Hole #1.unity
+    path: Assets/Scenes/Hole#1.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Hole#2.unity
+    guid: 2b12de64923441540aa5e2e350183c00
+  - enabled: 1
+    path: Assets/Scenes/Hole#3.unity
+    guid: f681c39d82a9d264891fdd28060ac939
   m_configObjects: {}
