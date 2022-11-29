@@ -30,7 +30,7 @@ public class GameReferee : MonoBehaviour
 
     void Start()
     {
-        myGyro = Input.gyro;
+       
     }
 
     public void PauseGame()
@@ -92,7 +92,7 @@ public class GameReferee : MonoBehaviour
                 break;
 
             case ActualGameState.DEFEAT:
-                Time.timeScale = 0f;
+                Time.timeScale = 0.0f;
                 break;
         }
 
@@ -106,7 +106,7 @@ public class GameReferee : MonoBehaviour
                     _defGameState = ActualGameState.VICTORY;
                     _goHUD.SetActive(false);
                     _goVictoryScreen.SetActive(true);
-                    Time.timeScale = 0f;
+                    Time.timeScale = 0.0f;
 
                 break;
         }

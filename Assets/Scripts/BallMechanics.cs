@@ -16,6 +16,8 @@ public class BallMechanics : MonoBehaviour
     public GameObject boostButton;
     public GameObject jumpButton;
     public GameReferee gameReferee;
+    public int jumpForce;
+    public int boostForce;
 
     void Start()
     {
@@ -59,7 +61,7 @@ public class BallMechanics : MonoBehaviour
         if (boostCounter >= 1)
         {
             boostCounter--;
-            rb.AddForce(Vector3.right * 1000, ForceMode.Impulse);
+            rb.AddForce(Vector3.right * boostForce, ForceMode.Impulse);
             if (boostCounter == 0)
                 boostButton.SetActive(false);
         
@@ -71,7 +73,7 @@ public class BallMechanics : MonoBehaviour
         if (jumpCounter >= 1)
         {
             jumpCounter--;
-            rb.AddForce(Vector3.up * 1000, ForceMode.Impulse);
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             if (jumpCounter == 0)
                 jumpButton.SetActive(false);
         }

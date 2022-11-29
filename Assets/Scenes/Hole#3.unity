@@ -134,6 +134,18 @@ PrefabInstance:
       propertyPath: sceneIndex
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5107115649044478224, guid: 363bc3233ef87cc4e87ed549ca808e17, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5107115649129078902, guid: 363bc3233ef87cc4e87ed549ca808e17, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5107115649889966260, guid: 363bc3233ef87cc4e87ed549ca808e17, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5341681810819090357, guid: 363bc3233ef87cc4e87ed549ca808e17, type: 3}
       propertyPath: m_Name
       value: GameManager

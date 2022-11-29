@@ -8,12 +8,14 @@ public class MenuManager : MonoBehaviour
 {
     Scene myScene;
     public int sceneIndex;
+    
+
 
     void Start()
     {
         int index = myScene.buildIndex;
         sceneIndex = index;
-        print(index);
+       
     }
     void Update()
     {
@@ -36,6 +38,7 @@ public class MenuManager : MonoBehaviour
     public void Restart(int sceneName)
     {
         SceneManager.LoadScene(sceneName);
+        
     }
 
     public void GoBackToMenu()

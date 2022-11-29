@@ -21,7 +21,7 @@ public class ShotManager : MonoBehaviour
   
     public void ShotOver()
     {
-        print("entro");
+      
         _goShotUI.SetActive(false);
         _goHUD.SetActive(true);
         slider.addedForce = 0;
