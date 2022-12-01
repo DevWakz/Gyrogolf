@@ -30,7 +30,7 @@ public class GameReferee : MonoBehaviour
 
     void Start()
     {
-       
+        myGyro = Input.gyro;
     }
 
     public void PauseGame()

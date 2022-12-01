@@ -218,6 +218,10 @@ PrefabInstance:
       propertyPath: m_MaxValue
       value: 2500
       objectReference: {fileID: 0}
+    - target: {fileID: 5341681810296119661, guid: 363bc3233ef87cc4e87ed549ca808e17, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5341681810392267134, guid: 363bc3233ef87cc4e87ed549ca808e17, type: 3}
       propertyPath: m_Intensity
       value: 1.33
@@ -229,6 +233,10 @@ PrefabInstance:
     - target: {fileID: 5341681810392267135, guid: 363bc3233ef87cc4e87ed549ca808e17, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5341681810566653161, guid: 363bc3233ef87cc4e87ed549ca808e17, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5341681810819090357, guid: 363bc3233ef87cc4e87ed549ca808e17, type: 3}
       propertyPath: m_Name
