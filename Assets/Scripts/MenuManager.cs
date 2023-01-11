@@ -8,7 +8,7 @@ public class MenuManager : MonoBehaviour
 {
     Scene myScene;
     public int sceneIndex;
-    
+    public GameObject creditsIMG;
 
 
     void Start()
@@ -53,6 +53,10 @@ public class MenuManager : MonoBehaviour
 
     }
 
+    public void OpenCredits()
+    {
+        creditsIMG.SetActive(true);
+    }
     
 }
 

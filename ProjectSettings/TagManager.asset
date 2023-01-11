@@ -8,6 +8,9 @@ TagManager:
   - Jump
   - DeathCollider
   - WinCollider
+  - Restarter
+  - Invisibility
+  - IncreaseSpeed
   layers:
   - Default
   - TransparentFX
@@ -17,7 +20,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Walls
   - 
   - 
   - 

@@ -1006,7 +1006,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1655120225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.0038, z: 0.0000000069621}
+  m_LocalPosition: {x: 0, y: 0.0073, z: 0.0000000069621}
   m_LocalScale: {x: 0.14083163, y: 0.0059097502, z: 0.07029779}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1200,6 +1200,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 5341681810566092458, guid: 363bc3233ef87cc4e87ed549ca808e17, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5341681810566653174, guid: 363bc3233ef87cc4e87ed549ca808e17, type: 3}
       propertyPath: m_LocalPosition.x
       value: -187.38002
@@ -1254,6 +1258,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5341681810819090359, guid: 363bc3233ef87cc4e87ed549ca808e17, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5341681810901670345, guid: 363bc3233ef87cc4e87ed549ca808e17, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5341681810929654735, guid: 363bc3233ef87cc4e87ed549ca808e17, type: 3}
@@ -1342,7 +1350,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5341681811788740437, guid: 363bc3233ef87cc4e87ed549ca808e17, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5341681811932260219, guid: 363bc3233ef87cc4e87ed549ca808e17, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1529,7 +1537,7 @@ TrailRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 498129504}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
